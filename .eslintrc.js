@@ -3,9 +3,10 @@ module.exports = {
 		browser: true,
 		es2021: true,
 		node: true,
-    jest: true,
 	},
-	extends: 'xo',
+	extends: ["xo", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
 	overrides: [
 		{
 			extends: [
