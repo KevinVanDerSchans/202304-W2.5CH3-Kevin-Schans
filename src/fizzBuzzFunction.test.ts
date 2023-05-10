@@ -1,4 +1,4 @@
-import { fizzBuzzRule } from "./fizzBuzzFunction";
+import { fizzBuzzRule } from "./fizzBuzz.js";
 
 describe("Given the FizzBuzz function", () => {
   describe("When it receives as parameters, 2 and 6", () => {
@@ -7,9 +7,9 @@ describe("Given the FizzBuzz function", () => {
       const secondArgument= 6;
 
       const expected = [2, 'fizz', 4, 'buzz', 'fizz'];
-      const result = fizzBuzzRule(arguments);
+      const result = fizzBuzzRule(firstArgument, secondArgument);
 
-      expect(result).toBe(expected);
+      expect(result).toStrictEqual(expected);
     });
   });
 });
